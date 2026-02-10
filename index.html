@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The God Factor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Cinzel:wght@400;700;900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#b30000", // Updated to darker red as per Services design
+              "primary-light": "#f20d0d", // Previous bright red
+              "bg-light": "#f8f5f5",
+              "bg-dark": "#181111",
+              "bg-black": "#0a0505",
+              "background-light": "#fdfbfb",
+              "background-dark": "#1a0505",
+              "off-white": "#f4f1f1",
+              "stone": "#e7e5e4"
+            },
+            fontFamily: {
+              display: ["Space Grotesk", "sans-serif"],
+              serif: ["Playfair Display", "serif"],
+              sculpture: ["Cinzel", "serif"],
+              news: ["Newsreader", "serif"],
+              body: ["Noto Sans", "sans-serif"],
+            },
+            boxShadow: {
+                "sculpture": "0 20px 50px -12px rgba(0, 0, 0, 0.25)",
+                "inner-glow": "inset 0 0 20px rgba(0,0,0,0.05)"
+            },
+            animation: {
+              'spin-slow': 'spin 20s linear infinite',
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      }
+      .filled {
+        font-variation-settings: 'FILL' 1;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #fdfbfb;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #b30000;
+        border-radius: 0px;
+      }
+      .text-outline {
+        -webkit-text-stroke: 1px currentColor;
+        color: transparent;
+      }
+      .text-stroke-red {
+        -webkit-text-stroke: 1px #f20d0d;
+        color: transparent;
+      }
+      .hover-reveal-gradient {
+        background-size: 200% 200%;
+        background-position: 0% 0%;
+        transition: background-position 0.5s ease, color 0.3s ease;
+      }
+      .hover-reveal-gradient:hover {
+        background-position: 100% 100%;
+      }
+      .splatter-bg {
+        clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+      }
+      .group:hover .splatter-bg {
+        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
