@@ -1,10 +1,63 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useModal } from '../context/ModalContext';
+import { GoogleGenAI } from "@google/genai";
 
 const ContactModal: React.FC = () => {
   const { isModalOpen, closeModal } = useModal();
+  const [formData, setFormData] = useState({
+    name: '',
+    role: '',
+    org: '',
+    focus: '',
+    time: '10:00 AM',
+    situation: ''
+  });
+  const [loading, setLoading] = useState(false);
+  const [responseResult, setResponseResult] = useState<string | null>(null);
 
   if (!isModalOpen) return null;
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
+    const { id, value } = e.target;
+    // Handle the select specifically since it might map differently or use id
+    if (id === 'objective') {
+        setFormData(prev => ({ ...prev, focus: value }));
+    } else if (id) {
+        setFormData(prev => ({ ...prev, [id]: value }));
+    }
+  };
+
+  const handleTimeChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+      setFormData(prev => ({ ...prev, time: e.target.value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    try {
+        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+        const response = await ai.models.generateContent({
+            model: 'gemini-3-pro-preview',
+            contents: `Client Profile:
+Name: ${formData.name}
+Role: ${formData.role}
+Organization: ${formData.org}
+Strategic Focus: ${formData.focus}
+Time Preference: ${formData.time}
+Situation: ${formData.situation}
+
+Task: Generate a high-level strategic dossier and initial analysis based on the situation.`,
+            config: {
+                systemInstruction: "You are 'The God Factor', an elite strategic consultancy. Tone: Enigmatic, authoritative, precise, and high-impact. Provide a structured response with: 1. Assessment, 2. Strategic Vector, 3. Immediate Action.",
+            }
+        });
+        setResponseResult(response.text || "No intelligence generated.");
+    } catch (error) {
+        console.error(error);
+        setResponseResult("Connection to strategic intelligence failed. Please check your credentials or try again.");
+    }
+    setLoading(false);
+  };
 
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden">
@@ -77,6 +130,26 @@ const ContactModal: React.FC = () => {
             </button>
 
             <div className="max-w-2xl mx-auto w-full p-8 md:p-16 flex-1">
+                {responseResult ? (
+                    <div className="animate-in fade-in slide-in-from-bottom-4 duration-500">
+                        <div className="mb-8">
+                            <h3 className="text-xs font-bold text-primary uppercase tracking-widest mb-2">Strategic Dossier</h3>
+                            <div className="w-full h-1 bg-zinc-100 rounded-full overflow-hidden">
+                                <div className="w-full h-full bg-primary"></div>
+                            </div>
+                        </div>
+                        <div className="prose prose-sm md:prose-base font-serif bg-zinc-50 p-8 border-l-4 border-primary">
+                            <pre className="whitespace-pre-wrap font-sans text-sm text-zinc-700 leading-relaxed">{responseResult}</pre>
+                        </div>
+                        <button 
+                            onClick={() => setResponseResult(null)} 
+                            className="mt-8 text-xs font-bold uppercase tracking-widest text-primary hover:text-black transition-colors flex items-center gap-2"
+                        >
+                            <span className="material-symbols-outlined">arrow_back</span> New Inquiry
+                        </button>
+                    </div>
+                ) : (
+                <>
                 {/* Progress Header */}
                 <div className="mb-12">
                     <div className="flex justify-between items-end mb-4">
@@ -88,7 +161,7 @@ const ContactModal: React.FC = () => {
                     </div>
                 </div>
 
-                <form className="space-y-12">
+                <form className="space-y-12" onSubmit={handleSubmit}>
                     {/* Step 1: Identity */}
                     <div className="space-y-6">
                         <div className="flex items-center gap-4">
@@ -99,16 +172,16 @@ const ContactModal: React.FC = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div className="space-y-2">
                                 <label className="text-[10px] font-bold text-primary uppercase tracking-widest">Full Name</label>
-                                <input type="text" placeholder="Enter your name" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" />
+                                <input type="text" id="name" value={formData.name} onChange={handleChange} placeholder="Enter your name" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" required />
                             </div>
                             <div className="space-y-2">
                                 <label className="text-[10px] font-bold text-primary uppercase tracking-widest">Current Role</label>
-                                <input type="text" placeholder="e.g. Director" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" />
+                                <input type="text" id="role" value={formData.role} onChange={handleChange} placeholder="e.g. Director" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" required />
                             </div>
                         </div>
                         <div className="space-y-2">
                             <label className="text-[10px] font-bold text-primary uppercase tracking-widest">Organization</label>
-                            <input type="text" placeholder="Company or Institution Name" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" />
+                            <input type="text" id="org" value={formData.org} onChange={handleChange} placeholder="Company or Institution Name" className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm" required />
                         </div>
                     </div>
 
@@ -123,12 +196,12 @@ const ContactModal: React.FC = () => {
                         <div className="space-y-2">
                             <label className="text-[10px] font-bold text-primary uppercase tracking-widest">Primary Focus</label>
                             <div className="relative">
-                                <select className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors text-sm appearance-none cursor-pointer text-zinc-700">
-                                    <option>Select a strategic focus...</option>
-                                    <option>Brand Strategy</option>
-                                    <option>Crisis Management</option>
-                                    <option>Art Consultancy</option>
-                                    <option>Political Communication</option>
+                                <select id="objective" value={formData.focus} onChange={handleChange} className="w-full p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors text-sm appearance-none cursor-pointer text-zinc-700">
+                                    <option value="">Select a strategic focus...</option>
+                                    <option value="Brand Strategy">Brand Strategy</option>
+                                    <option value="Crisis Management">Crisis Management</option>
+                                    <option value="Art Consultancy">Art Consultancy</option>
+                                    <option value="Political Communication">Political Communication</option>
                                 </select>
                                 <span className="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-zinc-400 pointer-events-none">expand_more</span>
                             </div>
@@ -170,7 +243,7 @@ const ContactModal: React.FC = () => {
                                  <div className="space-y-2">
                                     <label className="text-[10px] font-bold text-primary uppercase tracking-widest">Time</label>
                                     <div className="relative">
-                                        <select className="w-full p-3 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors text-sm appearance-none cursor-pointer font-bold">
+                                        <select value={formData.time} onChange={handleTimeChange} className="w-full p-3 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors text-sm appearance-none cursor-pointer font-bold">
                                             <option>10:00 AM</option>
                                             <option>02:00 PM</option>
                                             <option>04:00 PM</option>
@@ -183,19 +256,25 @@ const ContactModal: React.FC = () => {
                             <div className="space-y-2">
                                 <label className="text-[10px] font-bold text-primary uppercase tracking-widest">The Situation</label>
                                 <textarea 
+                                    id="situation"
+                                    value={formData.situation}
+                                    onChange={handleChange}
                                     className="w-full h-full min-h-[160px] p-4 bg-white border border-zinc-200 focus:border-primary outline-none transition-colors placeholder-zinc-300 text-sm resize-none"
                                     placeholder="Briefly describe the context..."
+                                    required
                                 ></textarea>
                             </div>
                         </div>
                     </div>
 
                     <div className="pt-8">
-                        <button type="submit" className="w-full bg-primary text-white py-5 font-bold uppercase tracking-[0.2em] hover:bg-black transition-colors shadow-xl">
-                            Submit Request
+                        <button type="submit" disabled={loading} className="w-full bg-primary text-white py-5 font-bold uppercase tracking-[0.2em] hover:bg-black transition-colors shadow-xl disabled:opacity-70 disabled:cursor-wait">
+                            {loading ? "Analyzing..." : "Submit Request"}
                         </button>
                     </div>
                 </form>
+                </>
+                )}
             </div>
         </div>
       </div>
