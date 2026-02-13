@@ -1,55 +1,86 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The God Factor</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Cinzel:wght@400;700;900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
-      }
-      .filled {
-        font-variation-settings: 'FILL' 1;
-      }
-      ::-webkit-scrollbar {
-        width: 6px;
-      }
-      ::-webkit-scrollbar-track {
-        background: #fdfbfb;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #b30000;
-        border-radius: 0px;
-      }
-      .text-outline {
-        -webkit-text-stroke: 1px currentColor;
-        color: transparent;
-      }
-      .text-stroke-red {
-        -webkit-text-stroke: 1px #f20d0d;
-        color: transparent;
-      }
-      .hover-reveal-gradient {
-        background-size: 200% 200%;
-        background-position: 0% 0%;
-        transition: background-position 0.5s ease, color 0.3s ease;
-      }
-      .hover-reveal-gradient:hover {
-        background-position: 100% 100%;
-      }
-      .splatter-bg {
-        clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
-      }
-      .group:hover .splatter-bg {
-        clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
-      }
-    </style>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/index.tsx"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The God Factor</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Cinzel:wght@400;700;900&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1;
+      letter-spacing: normal;
+      text-transform: none;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-feature-settings: 'liga';
+      -webkit-font-smoothing: antialiased;
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+    }
+
+    .filled {
+      font-variation-settings: 'FILL' 1;
+    }
+
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #fdfbfb;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #b30000;
+      border-radius: 0px;
+    }
+
+    .text-outline {
+      -webkit-text-stroke: 1px currentColor;
+      color: transparent;
+    }
+
+    .text-stroke-red {
+      -webkit-text-stroke: 1px #f20d0d;
+      color: transparent;
+    }
+
+    .hover-reveal-gradient {
+      background-size: 200% 200%;
+      background-position: 0% 0%;
+      transition: background-position 0.5s ease, color 0.3s ease;
+    }
+
+    .hover-reveal-gradient:hover {
+      background-position: 100% 100%;
+    }
+
+    .splatter-bg {
+      clip-path: polygon(10% 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    .group:hover .splatter-bg {
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
 </html>
