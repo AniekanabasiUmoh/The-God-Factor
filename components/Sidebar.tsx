@@ -106,7 +106,7 @@ const Sidebar: React.FC = () => {
         <div className="hidden lg:flex flex-col gap-6 mt-8">
           <div className="h-px w-12 bg-primary/30"></div>
           <p className="text-[10px] text-zinc-400 max-w-[150px] leading-relaxed font-display">
-            © 2024 The God Factor.<br />All rights reserved.
+            © 2020 The God Factor.<br />All rights reserved.
           </p>
           <button
             onClick={openModal}
