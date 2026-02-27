@@ -22,11 +22,11 @@ const HomePage: React.FC = () => {
                     </div>
 
                     <header className="flex justify-between items-start">
-                        <span className="text-xs font-bold tracking-[0.3em] text-primary uppercase border-b border-primary pb-2">Est. 2024</span>
+                        <span className="text-xs font-bold tracking-[0.3em] text-primary uppercase border-b border-primary pb-2">Est. 2020</span>
                         <div className="flex gap-8 text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase hidden md:flex">
+                            <span>Lagos</span>
+                            <span>Abuja</span>
                             <span>London</span>
-                            <span>New York</span>
-                            <span>Zurich</span>
                         </div>
                     </header>
 
@@ -36,24 +36,25 @@ const HomePage: React.FC = () => {
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-900 italic pr-4">FACTOR.</span>
                         </h1>
                         <div className="h-1 w-32 bg-primary mb-8"></div>
+                        <p className="text-sm font-bold tracking-[0.25em] text-primary uppercase mb-3">Home of Creative Intelligence</p>
                         <p className="text-xl md:text-2xl font-light text-zinc-600 dark:text-zinc-400 max-w-xl leading-relaxed">
-                            We architect permanence in a volatile world. An avant-garde consultancy for those who shape history.
+                            Transforming Ideas into Influence, Identity &amp; Impact.
                         </p>
                     </div>
 
                     <div className="flex flex-col md:flex-row gap-12 items-end justify-between border-t border-zinc-200 dark:border-zinc-800 pt-8 mt-12">
                         <div className="flex gap-6">
                             <Link to="/services" className="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
-                                Explore Work
+                                Explore Our Services
                                 <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
                             </Link>
                             <button onClick={openModal} className="group flex items-center gap-2 text-sm font-bold uppercase tracking-widest hover:text-primary transition-colors">
-                                Inquire
+                                Book a Consultation
                                 <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">call_made</span>
                             </button>
                         </div>
                         <p className="text-[10px] uppercase tracking-widest text-zinc-400 max-w-xs text-right hidden md:block">
-                            Reputation Management • Crisis Calculus • Strategic Influence
+                            Brand Strategy • Crisis Intelligence • Cultural Advisory
                         </p>
                     </div>
                 </section>
@@ -68,12 +69,13 @@ const HomePage: React.FC = () => {
                         <div>
                             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">The Philosophy</span>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 leading-tight">
-                                We don't just manage reputations. <br />
-                                <span className="italic text-zinc-500">We sculpt legacies.</span>
+                                A multidisciplinary communication <br />
+                                <span className="italic text-zinc-500">&amp; art consultancy.</span>
                             </h2>
                             <p className="text-zinc-400 text-lg leading-relaxed mb-8 font-light">
-                                In an age of infinite noise, silence is a luxury and precision is a weapon. The God Factor operates at the intersection of data intelligence and high art, crafting narratives that are immune to market volatility.
+                                The God Factor is a corporate communication and art consultancy brand with nationwide prominence. We house a network of strategists, consultants, creatives, media experts, and partner firms committed to shaping influence, managing perception, and transforming ideas into finished, impactful products.
                             </p>
+                            <p className="text-zinc-500 text-sm font-medium tracking-widest uppercase border-t border-zinc-800 pt-6">We are not a religious organization. We are a thinking brand.</p>
                         </div>
                     </div>
                 </section>

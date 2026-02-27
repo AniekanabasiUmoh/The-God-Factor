@@ -61,7 +61,7 @@ const TeamPage: React.FC = () => {
 
                             <div className="max-w-xs text-sm font-medium uppercase tracking-widest leading-relaxed text-right">
                                 <p>Intelligence with Empathy.</p>
-                                <p className="text-gray-400 mt-2">Deconstructing the invisible forces that shape society.</p>
+                                <p className="text-gray-400 mt-2">Every client interaction is treated with respect, patience, and professionalism.</p>
                             </div>
                         </div>
                     </section>
@@ -76,14 +76,14 @@ const TeamPage: React.FC = () => {
                             {/* Team Member 01 */}
                             <div className="team-row group relative grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 hover:border-primary transition-colors duration-500 items-center cursor-pointer">
                                 <div className="col-span-8 relative z-10">
-                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Dr. Aris Thorne</h2>
+                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Offiong Andem</h2>
 
-                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Lead Philosopher</p>
+                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Team Lead</p>
                                 </div>
                                 <div className="col-span-4 hidden md:flex items-center justify-between">
-                                    <span className="text-sm font-bold uppercase tracking-widest">Ethics & Logic</span>
+                                    <span className="text-sm font-bold uppercase tracking-widest">Strategy & Vision</span>
                                     <div className="thumbnail-reveal absolute right-32 top-1/2 -translate-y-1/2 w-48 h-64 overflow-hidden shadow-2xl z-20 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500">
-                                        <img alt="Portrait of Dr. Aris Thorne" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKuKPr923UuAbI3cMauFTbjgJ3U3Oa5qMQGBtrX5fC9d7-4i4Ash-ZyTEY3CVOv-x5UxgRWup-z-Tif67HAZov-NheDQC4Hdl3D9NUmn1OLxybB6Mv1qVXWkF-Hfcmm-KPw4SpRILZobZPj7vJmPs_bItLUhlloooe5uYvkcFQHCr-_nPzwkttuNubaR_JpInHqK_rWmlnZwjtJUxo7Tje7lSamR8eh6zHBksqk1gHKRQUbZttJja4uceXDUh63aCvujgUCpRGxMQA" />
+                                        <img alt="Portrait of Offiong Andem" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKuKPr923UuAbI3cMauFTbjgJ3U3Oa5qMQGBtrX5fC9d7-4i4Ash-ZyTEY3CVOv-x5UxgRWup-z-Tif67HAZov-NheDQC4Hdl3D9NUmn1OLxybB6Mv1qVXWkF-Hfcmm-KPw4SpRILZobZPj7vJmPs_bItLUhlloooe5uYvkcFQHCr-_nPzwkttuNubaR_JpInHqK_rWmlnZwjtJUxo7Tje7lSamR8eh6zHBksqk1gHKRQUbZttJja4uceXDUh63aCvujgUCpRGxMQA" />
                                     </div>
                                 </div>
                             </div>
@@ -91,14 +91,14 @@ const TeamPage: React.FC = () => {
                             {/* Team Member 02 */}
                             <div className="team-row group relative grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 hover:border-primary transition-colors duration-500 items-center cursor-pointer">
                                 <div className="col-span-8 relative z-10">
-                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Elena Vosh</h2>
+                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Aniekanabasi Umoh</h2>
 
-                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Chief Architect</p>
+                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Tech Lead</p>
                                 </div>
                                 <div className="col-span-4 hidden md:flex items-center justify-between">
-                                    <span className="text-sm font-bold uppercase tracking-widest">Spatial Theory</span>
+                                    <span className="text-sm font-bold uppercase tracking-widest">Digital Systems</span>
                                     <div className="thumbnail-reveal absolute right-40 top-1/2 -translate-y-1/2 w-48 h-64 overflow-hidden shadow-2xl z-20 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500">
-                                        <img alt="Portrait of Elena Vosh" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcFMaWZLVEhcYlgm4STG3qZfulriwdVSdOZ2HJf1xdL2r7390hOVaPKi2Zfuadm4KvpWvVEy8PCYUM4Pxx5YOO2t4yVQozmvCIiuntL00a6hWURNxTbH72H9UGLM2DV7qQnZD4loi8667WH7C7p7ANy-cypu8bxOQqBMwtCbNtKwJ8IDt6IEcw_6ljKyyUAWajM4aSIzyCRKJKj6VEOLEgidxXHEcWCn8WPICZZ04sId16zTutDQ9Q4BBGZhtyaOSJqEf7ZFn4dw0r" />
+                                        <img alt="Portrait of Aniekanabasi Umoh" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDcFMaWZLVEhcYlgm4STG3qZfulriwdVSdOZ2HJf1xdL2r7390hOVaPKi2Zfuadm4KvpWvVEy8PCYUM4Pxx5YOO2t4yVQozmvCIiuntL00a6hWURNxTbH72H9UGLM2DV7qQnZD4loi8667WH7C7p7ANy-cypu8bxOQqBMwtCbNtKwJ8IDt6IEcw_6ljKyyUAWajM4aSIzyCRKJKj6VEOLEgidxXHEcWCn8WPICZZ04sId16zTutDQ9Q4BBGZhtyaOSJqEf7ZFn4dw0r" />
                                     </div>
                                 </div>
                             </div>
@@ -106,14 +106,14 @@ const TeamPage: React.FC = () => {
                             {/* Team Member 03 */}
                             <div className="team-row group relative grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 hover:border-primary transition-colors duration-500 items-center cursor-pointer">
                                 <div className="col-span-8 relative z-10">
-                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Marcus Kane</h2>
+                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Kola Adediran</h2>
 
-                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Strategy Director</p>
+                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Brand Strategist</p>
                                 </div>
                                 <div className="col-span-4 hidden md:flex items-center justify-between">
-                                    <span className="text-sm font-bold uppercase tracking-widest">Global Markets</span>
+                                    <span className="text-sm font-bold uppercase tracking-widest">Market Narrative</span>
                                     <div className="thumbnail-reveal absolute right-48 top-1/2 -translate-y-1/2 w-48 h-64 overflow-hidden shadow-2xl z-20 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500">
-                                        <img alt="Portrait of Marcus Kane" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArTuXRQznhJgU1plTIjhDSKGEqoBiL6PKdAJhE_TmOXfnl6ARf-VJ8aBMgpHdioWFBZ1zjXSmHA4JIoCZmYedeoMF4YunX67UXdc3NQZqIlPzDgBawVFTqmPMLAzTUCeuczZhKq-TH9jjlECMkwvECfsBPs0AUlnSPbVqgmry3PpJ0QPNoc-05NpSfo9xrFeJkzEvZaFTxL6eU6yJM1cepopVqRs5BKAYG1A65viM4QtXnh8eGJQXGtgEIZpU4onQMKAogi-Q3WOT0" />
+                                        <img alt="Portrait of Kola Adediran" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuArTuXRQznhJgU1plTIjhDSKGEqoBiL6PKdAJhE_TmOXfnl6ARf-VJ8aBMgpHdioWFBZ1zjXSmHA4JIoCZmYedeoMF4YunX67UXdc3NQZqIlPzDgBawVFTqmPMLAzTUCeuczZhKq-TH9jjlECMkwvECfsBPs0AUlnSPbVqgmry3PpJ0QPNoc-05NpSfo9xrFeJkzEvZaFTxL6eU6yJM1cepopVqRs5BKAYG1A65viM4QtXnh8eGJQXGtgEIZpU4onQMKAogi-Q3WOT0" />
                                     </div>
                                 </div>
                             </div>
@@ -121,14 +121,14 @@ const TeamPage: React.FC = () => {
                             {/* Team Member 04 */}
                             <div className="team-row group relative grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 hover:border-primary transition-colors duration-500 items-center cursor-pointer">
                                 <div className="col-span-8 relative z-10">
-                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Syla Rente</h2>
+                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Zara Effiong</h2>
 
-                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Creative Lead</p>
+                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Creative Director</p>
                                 </div>
                                 <div className="col-span-4 hidden md:flex items-center justify-between">
                                     <span className="text-sm font-bold uppercase tracking-widest">Visual Impact</span>
                                     <div className="thumbnail-reveal absolute right-32 top-1/2 -translate-y-1/2 w-48 h-64 overflow-hidden shadow-2xl z-20 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500">
-                                        <img alt="Portrait of Syla Rente" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-cSuzBVuz5abPQOVyI8gvjihW-1JYJTGBpySd9Hao7z1mCHJyL_xTWrX_5sHP1tVRz2CU92cNr6FRx4O3sjRFxC8rbQz-fi02A8ueBo_YWDZPBC4BmtzQqr5rz4e8nX4Tdgip4ipAAVh16UNr2rmH5GpLr1msrGyyN0g6z1GChs6BimlhlfHdkiyH6CFuN_fZmRZcTJToE9d19XrN9cDRncGUwjhfmBk1MBdnqyEBEBGzcBq4fwj-gH7nwW3feZu_hxOMjzID_WE" />
+                                        <img alt="Portrait of Zara Effiong" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG-cSuzBVuz5abPQOVyI8gvjihW-1JYJTGBpySd9Hao7z1mCHJyL_xTWrX_5sHP1tVRz2CU92cNr6FRx4O3sjRFxC8rbQz-fi02A8ueBo_YWDZPBC4BmtzQqr5rz4e8nX4Tdgip4ipAAVh16UNr2rmH5GpLr1msrGyyN0g6z1GChs6BimlhlfHdkiyH6CFuN_fZmRZcTJToE9d19XrN9cDRncGUwjhfmBk1MBdnqyEBEBGzcBq4fwj-gH7nwW3feZu_hxOMjzID_WE" />
                                     </div>
                                 </div>
                             </div>
@@ -136,40 +136,18 @@ const TeamPage: React.FC = () => {
                             {/* Team Member 05 */}
                             <div className="team-row group relative grid grid-cols-1 md:grid-cols-12 gap-6 py-12 border-b border-gray-200 hover:border-primary transition-colors duration-500 items-center cursor-pointer">
                                 <div className="col-span-8 relative z-10">
-                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Julian Reed</h2>
+                                    <h2 className="team-name-hover text-4xl md:text-5xl lg:text-6xl font-bold text-primary leading-none uppercase tracking-tight mix-blend-multiply">Emeka Osei</h2>
 
-                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Data Scientist</p>
+                                    <p className="text-black font-medium text-sm md:text-base tracking-[0.2em] uppercase mt-2 ml-1 md:ml-2">Media & PR Consultant</p>
                                 </div>
                                 <div className="col-span-4 hidden md:flex items-center justify-between">
-                                    <span className="text-sm font-bold uppercase tracking-widest">Predictive Models</span>
+                                    <span className="text-sm font-bold uppercase tracking-widest">Press & Relations</span>
                                     <div className="thumbnail-reveal absolute right-56 top-1/2 -translate-y-1/2 w-48 h-64 overflow-hidden shadow-2xl z-20 pointer-events-none grayscale group-hover:grayscale-0 transition-all duration-500">
-                                        <img alt="Portrait of Julian Reed" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCrRdbFlXf3UUJ4hwWcJ3KdWoF8PJIzE3PY8RQTSenbbYyy3XxuQwhVbBgAxwdeGbLXpn-3nVE61DeJT5aMNdP9OMvKh5YJ0qa7R_Ob9lHp1TbqyF9I1LdCDIeASysZ7hgulW1Du6LstPtsHeqQB4jbvEbcH6-fwBLrIuKaEdCWFVqPfMbFKxTcSedQnAT-CVMNL5By7AVgVc5d6rTFqHDdJL9-ScSy17EiDTyU6fS8id3KLCqf37uejoIFpIRmL8oHEs96homY6rI" />
+                                        <img alt="Portrait of Emeka Osei" className="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCrRdbFlXf3UUJ4hwWcJ3KdWoF8PJIzE3PY8RQTSenbbYyy3XxuQwhVbBgAxwdeGbLXpn-3nVE61DeJT5aMNdP9OMvKh5YJ0qa7R_Ob9lHp1TbqyF9I1LdCDIeASysZ7hgulW1Du6LstPtsHeqQB4jbvEbcH6-fwBLrIuKaEdCWFVqPfMbFKxTcSedQnAT-CVMNL5By7AVgVc5d6rTFqHDdJL9-ScSy17EiDTyU6fS8id3KLCqf37uejoIFpIRmL8oHEs96homY6rI" />
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
-                    </section>
-
-                    <section className="w-full bg-white text-primary border-y border-black py-4 overflow-hidden">
-                        <div className="flex whitespace-nowrap overflow-hidden">
-                            <div className="animate-marquee flex items-center gap-24 text-sm font-bold uppercase tracking-[0.3em] px-6">
-                                <span>Service-driven</span>
-                                <span>Polite</span>
-                                <span>Accessible</span>
-                                <span>No Ego</span>
-                                <span>Pure Impact</span>
-                                <span>Service-driven</span>
-                                <span>Polite</span>
-                                <span>Accessible</span>
-                                <span>No Ego</span>
-                                <span>Pure Impact</span>
-                                <span>Service-driven</span>
-                                <span>Polite</span>
-                                <span>Accessible</span>
-                                <span>No Ego</span>
-                                <span>Pure Impact</span>
-                            </div>
                         </div>
                     </section>
 

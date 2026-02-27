@@ -45,15 +45,15 @@ const ServicesListPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Brand Strategy & Architecture</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Brand Strategy & Positioning</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Market Positioning</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Corporate & Personal Brand Development</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Cultural Advisory</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Cultural & Ideological Consultation</span>
                                     </li>
                                 </ul>
                             </div>
@@ -76,11 +76,11 @@ const ServicesListPage: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Reputation Management</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Reputation & Image Management</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Political Communication</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Media Relations & Press Management</span>
                                     </li>
                                 </ul>
                             </div>
@@ -99,15 +99,15 @@ const ServicesListPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Counter-Propaganda Operations</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Crisis Communication Strategy</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Narrative Recovery</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Counter-Propaganda Design</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Digital Risk Analysis</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Narrative Recovery & Damage Control</span>
                                     </li>
                                 </ul>
                             </div>
@@ -126,15 +126,15 @@ const ServicesListPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Content Creation</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Content Development</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Cinematic Videography</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Videography & Documentary Production</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Visual Identity Systems</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Graphic Design & Visual Identity</span>
                                     </li>
                                 </ul>
                             </div>

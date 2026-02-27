@@ -92,9 +92,6 @@ const DashboardPage: React.FC = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" className="text-xs font-black uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                                    Review Outcome Report <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </a>
                             </div>
 
                             {/* Capability Card 2 */}
@@ -116,9 +113,6 @@ const DashboardPage: React.FC = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" className="text-xs font-black uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                                    View Roadmap <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </a>
                             </div>
 
                             {/* Capability Card 3 */}
@@ -140,9 +134,6 @@ const DashboardPage: React.FC = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" className="text-xs font-black uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                                    Impact Case Studies <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </a>
                             </div>
 
                             {/* Capability Card 4 */}
@@ -164,9 +155,6 @@ const DashboardPage: React.FC = () => {
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" className="text-xs font-black uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                                    Legacy Analysis <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </a>
                             </div>
                         </div>
                     </div>

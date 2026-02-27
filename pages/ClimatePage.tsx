@@ -26,14 +26,14 @@ const ClimatePage: React.FC = () => {
                             <div className="order-2 lg:order-1 flex flex-col gap-8 z-10">
                                 <div className="flex items-center gap-4">
                                     <div className="h-[1px] w-12 bg-primary"></div>
-                                    <span className="text-primary font-medium tracking-[0.2em] uppercase text-sm">Corporate Avant-Garde</span>
+                                    <span className="text-primary font-medium tracking-[0.2em] uppercase text-sm">Climate Intelligence & Environmental Advocacy</span>
                                 </div>
                                 <h1 className="text-6xl md:text-8xl font-light italic leading-[0.9] tracking-tight">
                                     The Art of <br />
                                     <span className="font-bold text-primary not-italic">Urgent Change</span>
                                 </h1>
                                 <p className="text-xl md:text-2xl text-[#5a4a4a] dark:text-gray-300 max-w-lg leading-relaxed font-light">
-                                    Corporate advocacy meets sculptural precision. Decoding the climate crisis through high-end strategy and visceral art.
+                                    Beyond corporate and political communication, The God Factor is actively engaged in climate change advocacy and environmental communication. We use media campaigns, advocacy storytelling, policy-aligned communication, and public enlightenment strategies to influence behavior, policy attention, and societal responsibility toward environmental sustainability.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-6 mt-4">
                                     <button className="group flex items-center gap-3 text-lg border-b border-primary pb-1 w-fit hover:opacity-70 transition-opacity">
@@ -95,14 +95,11 @@ const ClimatePage: React.FC = () => {
                                     <div className="relative z-10 h-full flex flex-col justify-between min-h-[280px]">
                                         <div>
                                             <span className="text-xs font-bold text-primary tracking-widest uppercase mb-4 block">01</span>
-                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Strategic Foresight</h3>
+                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Media Campaigns</h3>
                                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                                Developing robust frameworks for environmental governance and sustainability beyond compliance.
+                                                Designing and deploying targeted media campaigns that bring environmental urgency into public consciousness with clarity and force.
                                             </p>
                                         </div>
-                                        <a href="#" className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider group-hover:gap-4 transition-all">
-                                            Read More <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                        </a>
                                     </div>
                                 </div>
                                 {/* Card 2 */}
@@ -113,14 +110,11 @@ const ClimatePage: React.FC = () => {
                                     <div className="relative z-10 h-full flex flex-col justify-between min-h-[280px]">
                                         <div>
                                             <span className="text-xs font-bold text-primary tracking-widest uppercase mb-4 block">02</span>
-                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Crisis Management</h3>
+                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Advocacy Storytelling</h3>
                                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                                Navigating reputational risks with precise, data-backed communication and sculptural narratives.
+                                                Transforming cold climate data into visceral, human-centred narratives that move audiences beyond awareness into action.
                                             </p>
                                         </div>
-                                        <a href="#" className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider group-hover:gap-4 transition-all">
-                                            Read More <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                        </a>
                                     </div>
                                 </div>
                                 {/* Card 3 */}
@@ -131,14 +125,11 @@ const ClimatePage: React.FC = () => {
                                     <div className="relative z-10 h-full flex flex-col justify-between min-h-[280px]">
                                         <div>
                                             <span className="text-xs font-bold text-primary tracking-widest uppercase mb-4 block">03</span>
-                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Policy Advocacy</h3>
+                                            <h3 className="text-3xl font-medium mb-4 group-hover:text-primary transition-colors">Policy-Aligned Communication</h3>
                                             <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
-                                                Influencing stakeholder perception through compelling, art-driven narratives that demand attention.
+                                                Bridging the gap between scientific findings and policy attention — positioning our clients at the forefront of environmental leadership.
                                             </p>
                                         </div>
-                                        <a href="#" className="mt-8 flex items-center gap-2 text-sm font-bold uppercase tracking-wider group-hover:gap-4 transition-all">
-                                            Read More <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>

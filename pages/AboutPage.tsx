@@ -16,16 +16,16 @@ const AboutPage: React.FC = () => {
                     <div className="absolute top-20 left-1/2 w-px h-32 bg-primary/20 -z-10"></div>
 
                     <div className="max-w-7xl mx-auto">
-                        <div className="inline-block mb-6 px-3 py-1 border border-primary text-primary text-xs font-bold uppercase tracking-[0.2em]">Our Expertise</div>
+                        <div className="inline-block mb-6 px-3 py-1 border border-primary text-primary text-xs font-bold uppercase tracking-[0.2em]">Who We Are</div>
                         <h1 className="text-5xl md:text-7xl lg:text-[6rem] font-bold leading-[0.9] tracking-tighter text-primary mb-8 uppercase">
-                            Segmented<br />
-                            <span className="text-[#181111] dark:text-white">Intelligence</span>
+                            About<br />
+                            <span className="text-[#181111] dark:text-white">The God Factor</span>
                         </h1>
                         <div className="w-full h-px bg-gray-200 dark:bg-gray-800 my-8 relative">
                             <div className="absolute left-0 top-0 h-full w-32 bg-primary"></div>
                         </div>
                         <p className="text-lg md:text-xl font-normal leading-relaxed max-w-2xl text-gray-600 dark:text-gray-300">
-                            We dissect complex challenges into actionable strategies. Our services are the bridge between artistic vision and market dominance.
+                            The God Factor is an Art Consultancy and Strategic Communication brand designed to operate at the intersection of ideas, influence, culture, media, and public perception. We serve political actors, private individuals, corporate bodies, institutions, and social causes with bespoke communication, branding, crisis response, and media intelligence solutions.
                         </p>
                     </div>
                 </section>
@@ -44,15 +44,15 @@ const AboutPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Brand Strategy & Architecture</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Brand Strategy & Positioning</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Market Positioning</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Corporate & Personal Brand Development</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Cultural Advisory</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Cultural & Ideological Consultation</span>
                                     </li>
                                 </ul>
                             </div>
@@ -74,11 +74,11 @@ const AboutPage: React.FC = () => {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Reputation Management</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Reputation & Image Management</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Political Communication</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Media Relations & Press Management</span>
                                     </li>
                                 </ul>
                             </div>
@@ -96,15 +96,15 @@ const AboutPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Counter-Propaganda Operations</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Crisis Communication Strategy</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Narrative Recovery</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Counter-Propaganda Design</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Digital Risk Analysis</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Narrative Recovery & Damage Control</span>
                                     </li>
                                 </ul>
                             </div>
@@ -122,15 +122,15 @@ const AboutPage: React.FC = () => {
                                 <ul className="space-y-4 border-t border-gray-100 dark:border-gray-800 pt-6">
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Content Creation</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Content Development</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Cinematic Videography</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Videography & Documentary Production</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary text-sm mt-1">arrow_forward</span>
-                                        <span className="text-sm font-medium uppercase tracking-wide">Visual Identity Systems</span>
+                                        <span className="text-sm font-medium uppercase tracking-wide">Graphic Design & Visual Identity</span>
                                     </li>
                                 </ul>
                             </div>
@@ -179,7 +179,7 @@ const AboutPage: React.FC = () => {
                             LET'S BUILD<br /><span className="text-white">INFLUENCE</span>
                         </h2>
                         <p className="text-xl md:text-2xl font-light text-gray-400 mb-12 max-w-xl mx-auto">
-                            Your narrative is waiting to be written. Let's craft your legacy.
+                            Whether you need brand clarity, crisis control, narrative dominance, or strategic visibility — The God Factor is built to deliver.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <button onClick={openModal} className="flex min-w-[240px] cursor-pointer items-center justify-center rounded h-16 px-8 bg-primary text-white text-lg font-bold tracking-[0.15em] uppercase hover:bg-white hover:text-primary transition-all shadow-[4px_4px_0px_0px_rgba(255,255,255,0.2)] hover:shadow-none hover:translate-x-[2px] hover:translate-y-[2px]">

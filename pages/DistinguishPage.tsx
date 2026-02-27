@@ -1,11 +1,8 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import Sidebar from '../components/Sidebar';
 import Footer from '../components/Footer';
-import { useModal } from '../context/ModalContext';
 
 const DistinguishPage: React.FC = () => {
-    const { openModal } = useModal();
 
     return (
         <div className="flex flex-col lg:flex-row min-h-screen bg-[#0a0a0a] text-white font-display antialiased selection:bg-[#f20d0d] selection:text-white">
@@ -36,15 +33,50 @@ const DistinguishPage: React.FC = () => {
                 {/* Hero */}
                 <section className="min-h-screen flex flex-col justify-center items-center px-6 relative bg-[#0a0a0a] overflow-hidden">
                     <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-[#f20d0d]/30 via-[#0a0a0a] to-[#0a0a0a]"></div>
-                    <div className="relative z-10 text-center max-w-4xl mx-auto flex flex-col items-center gap-8">
+                    <div className="relative z-10 text-center max-w-5xl mx-auto flex flex-col items-center gap-8">
                         <h1 className="text-7xl md:text-9xl font-black uppercase tracking-tighter leading-[0.8]">
-                            <span className="block text-white">Monolithic</span>
-                            <span className="block text-[#f20d0d]">Narrative</span>
+                            <span className="block text-white">What Sets</span>
+                            <span className="block text-[#f20d0d]">Us Apart</span>
                         </h1>
                         <p className="text-xl md:text-2xl font-body text-gray-400 max-w-xl font-light">
-                            The art of strategy carved from chaos. Scroll to explore our latest case studies.
+                            A rare blend of creativity, intelligence, and 24/7 commitment to your success.
                         </p>
-                        <div className="animate-bounce mt-12 text-[#f20d0d]">
+
+                        {/* Differentiators Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mt-8 w-full text-left">
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">verified</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">Exceptional Client Satisfaction</h3>
+                                <p className="text-gray-500 text-sm font-light">Every mandate is treated as a high-stakes mission. We deliver — and we do it right the first time.</p>
+                            </div>
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">workspace_premium</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">Operational Excellence</h3>
+                                <p className="text-gray-500 text-sm font-light">Precision in process, output, and client experience. Excellence is not a goal — it is our baseline.</p>
+                            </div>
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">balance</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">Integrity & Responsibility</h3>
+                                <p className="text-gray-500 text-sm font-light">We operate with fairness, transparency, and a deep sense of professional accountability.</p>
+                            </div>
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">auto_awesome</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">Creativity Meets Intelligence</h3>
+                                <p className="text-gray-500 text-sm font-light">A rare combination that makes our work both arresting and effective across every sector we serve.</p>
+                            </div>
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">palette</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">Life-Changing Impact</h3>
+                                <p className="text-gray-500 text-sm font-light">Through art and strategy, we do not just change narratives — we change trajectories.</p>
+                            </div>
+                            <div className="backdrop-blur-md bg-white/5 border border-white/10 p-6 hover:border-[#f20d0d]/50 transition-colors">
+                                <span className="material-symbols-outlined text-[#f20d0d] text-2xl mb-3 block">schedule</span>
+                                <h3 className="text-white font-bold text-sm uppercase tracking-widest mb-2">24/7 Responsiveness</h3>
+                                <p className="text-gray-500 text-sm font-light">Crises don't keep office hours. Neither do we. When it matters most, The God Factor is reachable.</p>
+                            </div>
+                        </div>
+
+                        <div className="animate-bounce mt-4 text-[#f20d0d]">
                             <span className="material-symbols-outlined !text-4xl">arrow_downward</span>
                         </div>
                     </div>
@@ -65,9 +97,6 @@ const DistinguishPage: React.FC = () => {
                             <p className="text-lg md:text-xl text-gray-200 font-body leading-relaxed mb-8 border-l border-white/20 pl-4">
                                 Restructuring public perception following a major data breach for Entity X. Turning a vulnerability into a demonstration of resilience.
                             </p>
-                            <a className="inline-flex items-center gap-3 text-white font-bold uppercase tracking-widest hover:text-[#f20d0d] transition-colors group/link" href="#">
-                                Explore Strategy <span className="material-symbols-outlined group-hover/link:translate-x-2 transition-transform">arrow_right_alt</span>
-                            </a>
                         </div>
                     </div>
                 </section>
@@ -87,9 +116,6 @@ const DistinguishPage: React.FC = () => {
                             <p className="text-lg md:text-xl text-gray-200 font-body leading-relaxed mb-8 border-l border-white/20 pl-4">
                                 Predictive modeling for voter sentiment shifts in swing states. Using chaos theory to map the political landscape.
                             </p>
-                            <a className="inline-flex items-center gap-3 text-white font-bold uppercase tracking-widest hover:text-[#f20d0d] transition-colors group/link" href="#">
-                                View Analysis <span className="material-symbols-outlined group-hover/link:translate-x-2 transition-transform">arrow_right_alt</span>
-                            </a>
                         </div>
                     </div>
                 </section>
@@ -110,9 +136,6 @@ const DistinguishPage: React.FC = () => {
                             <p className="text-xl md:text-2xl text-gray-200 font-body font-light leading-relaxed mb-10 max-w-2xl mx-auto">
                                 Reclaiming heritage through avant-garde storytelling for Brand Y. A complete reinvention of the historical archive.
                             </p>
-                            <a className="inline-block px-8 py-4 bg-[#f20d0d] text-white font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-colors" href="#">
-                                Read Case Study
-                            </a>
                         </div>
                     </div>
                 </section>
@@ -133,9 +156,6 @@ const DistinguishPage: React.FC = () => {
                                 <p className="text-lg md:text-xl text-gray-300 font-body leading-relaxed mb-6">
                                     Redefining the gallery space for the digital age at Museum Z. We merged physical sculpture with digital permanence.
                                 </p>
-                                <a className="text-sm font-bold uppercase tracking-widest text-white hover:text-[#f20d0d] transition-colors flex items-center gap-2" href="#">
-                                    View Exhibition <span className="material-symbols-outlined text-lg">arrow_outward</span>
-                                </a>
                             </div>
                         </div>
                     </div>
@@ -157,9 +177,6 @@ const DistinguishPage: React.FC = () => {
                                 <p className="text-lg md:text-xl text-gray-300 font-body leading-relaxed mb-6">
                                     Greenwashing defense and authentic eco-alignment strategies. Building trust through radical transparency.
                                 </p>
-                                <a className="text-sm font-bold uppercase tracking-widest text-white hover:text-[#f20d0d] transition-colors flex items-center gap-2 justify-end" href="#">
-                                    Read Report <span className="material-symbols-outlined text-lg">arrow_outward</span>
-                                </a>
                             </div>
                         </div>
                     </div>

@@ -26,7 +26,7 @@ const PhilosophyPage: React.FC = () => {
                             </h1>
                             <div className="w-24 h-2 bg-primary mb-8"></div>
                             <p className="text-lg md:text-xl font-normal leading-relaxed max-w-lg text-zinc-600">
-                                Creative intelligence meets crisis management in a layout of red-tinted classical forms and modern geometry.
+                                We transform raw ideas into refined outcomes by applying a deliberate blend of creativity, research, cultural intelligence, and strategic execution — our <em>Midas touch</em>.
                             </p>
                             <div className="flex gap-4 mt-10">
                                 <button className="group flex items-center gap-2 text-primary font-bold text-sm tracking-widest uppercase border-b border-primary pb-1 hover:text-[#181111] hover:border-[#181111] transition-all">
@@ -63,7 +63,7 @@ const PhilosophyPage: React.FC = () => {
                                 <p className="text-primary font-medium text-sm tracking-[0.2em] uppercase">Strategic Alchemy</p>
                             </div>
                             <div className="mt-8 md:mt-0 max-w-md text-right md:text-left">
-                                <p className="text-zinc-600">Turning crisis into opportunity through the alchemy of art and high-stakes strategy.</p>
+                                <p className="text-zinc-600">Ideas are powerful — but only when properly structured, positioned, and amplified. We apply the alchemy of art and strategy to turn every challenge into a defining moment.</p>
                             </div>
                         </div>
 
@@ -120,19 +120,16 @@ const PhilosophyPage: React.FC = () => {
                                 <span className="material-symbols-outlined text-4xl text-[#181111] mb-6 group-hover:text-primary transition-colors">chess_knight</span>
                                 <h3 className="text-2xl font-bold mb-2">Brand Strategy</h3>
                                 <p className="text-sm text-zinc-500">Long-term vision crafting.</p>
-                                <a href="#" className="inline-block mt-6 text-xs font-bold uppercase tracking-widest text-primary opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Discover</a>
                             </div>
                             <div className="p-10 border-r border-b border-zinc-100 hover:bg-zinc-50 transition-colors group">
                                 <span className="material-symbols-outlined text-4xl text-[#181111] mb-6 group-hover:text-primary transition-colors">gpp_maybe</span>
                                 <h3 className="text-2xl font-bold mb-2">Crisis Management</h3>
                                 <p className="text-sm text-zinc-500">Protection when it matters most.</p>
-                                <a href="#" className="inline-block mt-6 text-xs font-bold uppercase tracking-widest text-primary opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Discover</a>
                             </div>
                             <div className="p-10 border-r border-b border-zinc-100 hover:bg-zinc-50 transition-colors group">
                                 <span className="material-symbols-outlined text-4xl text-[#181111] mb-6 group-hover:text-primary transition-colors">palette</span>
                                 <h3 className="text-2xl font-bold mb-2">Art Consultancy</h3>
                                 <p className="text-sm text-zinc-500">Curating taste and influence.</p>
-                                <a href="#" className="inline-block mt-6 text-xs font-bold uppercase tracking-widest text-primary opacity-0 group-hover:opacity-100 transition-opacity translate-y-2 group-hover:translate-y-0 duration-300">Discover</a>
                             </div>
                         </div>
                     </div>
@@ -156,7 +153,7 @@ const PhilosophyPage: React.FC = () => {
                             LET'S<br /><span className="text-primary">CREATE.</span>
                         </h2>
                         <p className="text-xl md:text-2xl font-light text-zinc-400 mb-12 max-w-xl">
-                            Ready to redefine your narrative with the God Factor? The canvas is waiting.
+                            Whether you need brand clarity, crisis control, narrative dominance, or strategic visibility — The God Factor is built to deliver.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6">
                             <button
